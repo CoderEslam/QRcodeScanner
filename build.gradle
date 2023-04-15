@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        classpath 'com.google.android.gms:oss-licenses-plugin:0.10.5'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.1'
+    }
+}
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+    id "com.google.gms.google-services" version "4.3.10" apply false
+
+}
+
+ext {
+    permissionsDispatcherVersion = '2.4.0'
+    supportLibraryVersion = '28.0.0-rc02'
+    rxPermissionsVersion = '0.9.4@aar'
+    rxJavaVersion = '2.1.10'
+    rxAndroidVersion = '2.0.2'
+}
